@@ -1,0 +1,100 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-color:white;
+}
+
+::-webkit-scrollbar{
+	display:none;
+}
+
+.jelajah, .taman-bandung, .text-block{
+	text-align:center;
+	color:rgb(0,0,0);
+}
+
+.judul{
+	margin:50px 0px 0px 0px ;
+	width:100%;
+	float:left;
+}
+
+.jelajah{
+	font-family: 'Caveat', cursive;
+	font-size:24pt;
+	margin-bottom: -15px;
+}
+
+.taman-bandung{
+	font-family: 'Playfair Display', serif;
+	font-size:32pt;
+
+}
+
+.bungkus-search-engine{
+	float:left;
+	margin:100px 0px 0px 430px;
+
+}
+
+.search-engine{
+	box-shadow: 10px 10px 60px 1px grey;
+	border-radius:25px;
+}
+
+input#se{
+	padding:12px 10px 13px 50px;
+	width:450px;
+	border:none;
+	border-radius:25px 0px 0px 25px;
+}
+
+input#se::-webkit-input-placeholder{
+	color:rgb(0,0,0);
+
+}
+
+input#se:focus{
+	outline:none;
+}
+
+button#se{
+	width:49px;
+	height:49px;
+	margin-left:-5px;
+	background:none;
+	border:0px;
+	box-shadow:none;
+	color:rgb(226,166,168);
+	border-radius:0px 25px 25px 0px;
+	outline:none;
+	background-color:rgb(255,255,255);
+
+}
+
+.belakang-content-index{
+	float:left;
+	width:960px;
+	height:500px;
+	background-color:rgb(0,0,0);
+	padding:0px;
+	margin:130px 0px 0px 200px;
+}
+
+.content-atas-kiri{
+	width:300px;
+	height:100px;
+	background-color:red;
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+
+.content-atas{
+	width:300px;
+	height:100px;
+	background-color:red;
+	float:left;
+	margin:0px 0px 0px 30px;
+	padding:0px;
+}
