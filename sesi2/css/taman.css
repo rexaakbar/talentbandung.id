@@ -1,0 +1,96 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-color:rgb(248,249,251);
+	background-image:linear-gradient(to bottom, transparent, rgb(248,249,251)), url('../img/bg-taman-balai-kota.jpg') ;
+	background-repeat:no-repeat;
+	background-size:100% 337px;
+}
+
+::-webkit-scrollbar{
+	display:none;
+}
+
+.belakang-taman-balai-kota{
+	width:100%;
+	height:100%;
+	float:left;
+}
+
+.judul{
+	margin:120px 0px 0px 0px;
+	width:100%;
+	float:left;
+}
+
+.taman, .nama-taman, .belakang-content{
+	text-align:center;
+	color:rgba(0,0,0,0.9);
+}
+
+.taman{
+	font-family: 'Caveat', cursive;
+	font-size:24pt;
+	margin-bottom:-15px;
+}
+
+.nama-taman{
+	font-family: 'Playfair Display', serif;
+	font-size:29pt;
+}
+
+.belakang-content{
+	float:left;
+	width:100%;
+	margin:90px 0px 0px 0px;
+}
+
+
+.content{
+	float:left;
+	width:500px;
+	font-family: 'Roboto', sans-serif;
+	line-height:28px;
+	margin:0px 0px 0px 430px;
+}
+
+.belakang-slider{
+	width:100%;
+	height:200px;
+	float:left;
+	/*background-color:red;*/
+	margin:100px 0px 100px 0px;
+}
+
+.prev{
+	float:left;
+	font-size:40px;
+	margin:75px 25px 0px 200px;
+}
+
+.prev i{
+	color:rgba(0,0,0,0.9)
+}
+
+.image-slider{
+	float:left;
+	width:250px;
+	height:180px;
+	background-color:black;
+	margin:10px 0px 0px 25px;
+}
+
+.img-slider{
+	width:100%;
+	height:100%;
+}
+
+.next{
+	float:left;
+	font-size:40px;
+	margin:75px 0px 0px 50px;
+}
+
+.next i{
+	color:rgba(0,0,0,0.9)
+}
