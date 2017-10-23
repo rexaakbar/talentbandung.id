@@ -112,6 +112,7 @@ button#se{
 	float:left;
 	margin:0px;
 	padding:0px;
+	transition: all .3s ease .15s;
 }
 
 .content-atas{
@@ -143,7 +144,40 @@ button#se{
 .photo-content{
 	width:100%;
 	height:175px;
-	float:left;
+	z-index:1;
+	transition: all .3s ease .15s;
+}
+
+.photo-content-hover{
+	width:100%;
+	height:175px;
+	background-color:rgba(226,166,168,0.8);
+	opacity:0;
+	z-index:2;
+	transition: all .3s ease .15s;
+}
+
+.photo-content-hover > i{
+	color:white;
+	font-size:32pt;
+	margin:65px 0px 0px 140px;
+}
+
+.bungkus-photo-content:hover > a > .photo-content-hover{
+	opacity:1;
+	transition: all .3s ease .15s;
+}
+
+.photo-content, .photo-content-hover {
+	position:absolute;
+	transition: all .3s ease .15s;
+}
+
+.bungkus-photo-content{
+	position:relative;
+	width:100%;
+	height:175px;
+	transition: all .3s ease .15s;
 }
 
 .judul-content{
@@ -151,6 +185,7 @@ button#se{
 	height:125px;
 	background-color:rgba(255,255,255,0);
 	float:left;
+
 }
 
 .taman-content, .lokasi-content, .alamat-content{
@@ -179,6 +214,8 @@ button#se{
 	font-family: 'Roboto', sans-serif;
 	font-size:10pt;
 }
+
+
 
 img.img-content{
 	width:100%;
