@@ -167,8 +167,9 @@ button#se{
 
 .photo-content-hover > i{
 	color:white;
-	font-size:32pt;
-	margin:65px 0px 0px 140px;
+	font-size:36pt;
+	margin:50px 0px 0px 140px;
+	position: absolute;
 }
 
 .bungkus-photo-content:hover > a > .photo-content-hover{
