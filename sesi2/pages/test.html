@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Home | Jelajah Bandung</title>
+	<link rel="icon" href="../img/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Playfair+Display:700|Roboto:400,400i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/test.css">
+	<link rel="stylesheet" type="text/css" href="../ionicons-2.0.1/css/ionicons.css">
+
+
+</head>
+<body>
+		<div class="back-slider">
+			<div class="content-1" id="c1">1</div>
+			<div class="content-2" id="c2">2</div>
+			<div class="content-3" id="c3">3</div>
+		</div>
+
+		<button id="btnP">Prev</button>
+		<button id="btnN">Next</button>
+		
+		
+		
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var htgP   = 1;
+				var htgN   = 1;
+				var kiric1  = parseInt($("#c1").css("margin-left"));
+				var kiric2  = parseInt($("#c2").css("margin-left"));
+				var kiric3  = parseInt($("#c3").css("margin-left"));
+
+
+				$("#btnP").click(function(){
+					if(htgP <= 99){
+
+						kiric1 = kiric1 - 50;
+						kiric2 = kiric2 - 50;
+						kiric3 = kiric3 - 50;
+						
+						$("#btnP").text(kiric1);
+
+						$("#c1").css("margin-left",kiric1 + "px");
+						$("#c2").css("margin-left",kiric2 + "px");
+						$("#c3").css("margin-left",kiric3 + "px");
+						htgP++;
+					}
+				});
+
+				$("#btnN").click(function(){
+					if(htgN <= 99){
+
+						kiric1 = kiric1 + 50;
+						kiric2 = kiric2 + 50;
+						kiric3 = kiric3 + 50;
+						
+						$("#btnP").text(kiric1);
+
+						$("#c1").css("margin-left",kiric1 + "px");
+						$("#c2").css("margin-left",kiric2 + "px");
+						$("#c3").css("margin-left",kiric3 + "px");
+						htgN++;
+					}
+				});
+
+			});
+		</script>
+
+		<!-- <script type="text/javascript">
+			$(document).ready(function(){
+				var htgP   = 1;
+				var htgN   = 1;
+				var atas  = 10;
+				var kanan = 0;
+				var bawah = 0;
+				var kiri  = 20;
+
+				
+			});
+		</script> -->
+</body>
+</html>
