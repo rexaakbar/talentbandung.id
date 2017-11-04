@@ -145,9 +145,37 @@
 // 	greet(colNama[i]);
 // }
 
-function greet(nama = "Nama Belum Di Isi"){
-	return alert("Selamat malam tuan " + nama);
-	// return console.log("Selamat malam " + nama);
+// function greet(nama = "Nama Belum Di Isi"){
+// 	return alert("Selamat malam tuan " + nama);
+//  return console.log("Selamat malam " + nama);
+// }
+
+// greet("Rexa Akbar Malik");
+
+// var app = document.getElementsByClassName('taman');
+
+// console.log(app);
+
+
+
+// var btnGreet = document.getElementById('greet');
+
+// var nama = document.getElementById('nama');
+// var email = document.getElementById('alamat_email');
+
+// function greeting(){
+// 	return alert("Nama : " + nama.value + " " + "Email : " + email.value);
+// }
+
+// btnGreet.addEventListener('click' , greeting);
+
+function greeting(event){
+	var nama = event.target.textContent;
+	return alert("Halo " + nama);
 }
 
-greet("Rexa Akbar Malik");
+var app = document.getElementsByClassName('greet');
+
+for (var i = 0; i < app.length; i++) {
+	app[i].addEventListener('click' , greeting);
+}
